@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+            td{color:Maroon;}
+        </style>
+  
+</head>
+<body bgcolor="#ccffff">
+    <table border="0" cellpadding ="8" width="600" align="left" bgcolor="#FFC0C0">
+
+           <center>
+                        
+                   <caption align="top"">
+                            <h2>Application Form</h2>
+                    </caption>
+
+                    <form name="testForm">
+                          <font face="georgia" size="4">
+
+                                <tr>
+                                     <td>FirstName</td>
+                                      <td> 
+                                          <input type="text" name="FName" size="30" maxlength="30" value="" 
+                                              align="middle" style="background-color: #FFFFFF; border-color: #800000" 
+                                              tabindex="1" required/>
+     
+                                </tr>
+
+                                <tr>
+                                      <td>Last Name</td>
+                                      <td> 
+                                          <input type="text" name="LName" size="30" maxlength="30" value="" 
+                                              align="middle" 
+                                              
+                                              style="border-color: #800000; font-family: Georgia; background-color: #FFFFFF" 
+                                              tabindex="2" />
+                                      </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Education Type
+                                    </td>
+
+                                    <td>
+                                        <input type="checkbox" name="Education" value="Graduate"
+                                            tabindex="3"  />Graduate
+
+                                        <input type="checkbox" name="Education1" value="Post Graduate" 
+                                            tabindex="4" />Post Graduate
+                                    </td>
+                                </tr>
+
+                                 <tr>
+                                      <td>Gender</td>
+                                      <td> 
+                                          <input type="radio" name="Gender" value="Male"  tabindex="5" checked/>Male
+                                          <input type="radio" name="Gender" value="Male"  tabindex="6" checked/>FeMale
+                                      </td>
+                                </tr>
+
+                                <tr>
+                                      <td>Salary</td>
+                                      <td> 
+                                          <input type="Password" name="Salary" size="10" maxlength="10" tabindex="7" />
+                                        
+                                      </td>
+                                </tr>
+
+                                   <tr>
+                                      <td>Comments</td>
+                                      <td> 
+                                          <textarea rows="5" cols="50" wrap="physical" tabindex="8" >
+                                          </textarea>
+                                        
+                                      </td>
+                                </tr>
+
+                                <tr>
+                                      <td>State</td>
+                                      <td> 
+                                          <select name="state" tabindex="9">
+                                            <option>Andhrapradesh</option>
+                                            <option>Bihar</option>
+                                            <option>Himachalpradesh</option>
+                                            <option>Karnataka</option>
+                                            <option>Kerala</option>
+                                            <option>Tamilnadu</option>
+                                            
+                                          </select>
+                                        
+                                      </td>
+                                </tr>
+
+                                 <tr>
+                                     
+                                      <td>Programming Languages</td> 
+                                          <td>
+                                            <input list="Languages" />
+                                            <datalist id="Languages">
+                                                 <option value="COBOL"></option>
+                                                 <option value="Fortran"></option>
+                                                 <option value="C"></option>
+                                                 <option value="C++"></option>
+                                                 <option value="Java"></option>
+                                                 <option value="Python"></option>
+                                                  <option value="PHP"></option>
+                                                 <option value="C#"></option>
+                                                 <option value="Visual Basic 6.0"></option>
+                                               
+                                            </datalist>
+
+                                          </td>
+                                      </td>
+                                </tr>
+
+                            </font>
+                     </form>
+            </center>               
+    </table>
+</body>
+</html>
