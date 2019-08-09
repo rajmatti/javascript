@@ -115,7 +115,14 @@
                                           </td>
                                       </td>
                                 </tr>
-
+  <tr>
+                                     
+                                      <td colspan="2" align="center"> 
+                                          <input type="Button" value="Submit" tabindex="10" onclick='processForm()' />
+                                           <input type="Reset" value="Reset" tabindex="11" />
+                                        
+                                      </td>
+                                </tr>
                             </font>
                      </form>
             </center>               
