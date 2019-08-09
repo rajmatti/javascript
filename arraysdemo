@@ -1,0 +1,59 @@
+<HTML> 
+<HEAD> 
+<TITLE> Arrays Demo</TITLE> </HEAD> 
+<BODY>  
+<SCRIPT LANGUAGE="JavaScript">   
+var fruits = ['apple','orange','kiwi'];
+alert (fruits[1]);
+
+document.write("The Size of array \'fruits\' is : "+ fruits.length+'<br>');
+// add elements to end of array
+fruits[3]='banana';
+fruits[fruits.length]='cherry';
+fruits.push('grape');
+
+// add elements to begining of array
+fruits.unshift('blackberry');
+
+document.write('<br>'+"-------------------------------------------------"+'<br>')
+// iteration tru arrays in js
+document.write("The Array contents are: "+'<br>');
+
+for(i=0;i<fruits.length;i++)
+{
+ document.write(fruits[i]);
+ document.write('<BR/>');
+}
+
+document.write('<br>'+"-------------------------------------------------"+'<br>')
+document.write("The Array contents after sorting : "+'<br>');
+fruits.sort();
+
+// for each
+
+var text='';
+for(var i in fruits)
+{ 
+  text+= fruits[i];
+  text+= 'n';
+}
+
+document.write(text);
+
+//removing elements
+document.write('<br>'+"-------------------------------------------------"+'<br>')
+document.write('<br>'+"The Array contents after removing some elements : "+'<br>')
+fruits.pop();  // remove elemnts from end of array
+fruits.shift(); // ,,     ,,       ,, begining ,,
+
+for(i=0;i<fruits.length;i++)
+{
+ document.write(fruits[i]);
+ document.write('<BR/>');
+}
+
+
+
+</SCRIPT> 
+</BODY> 
+<HTML>
