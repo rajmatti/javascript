@@ -9,11 +9,12 @@
               if(name[i] == "a" || name[i] == "e" || name[i] == "i" || name[i] == "o" || name[i] == "u")
               count = count + 1;
 			}
-		document.write("Hello " + name + "!!! Your name has " + count + " vowels.");
+		document.write("<br>"+"Hello " + name + "!!! Your name has " + count + " vowels.");
 		}
    	 	var myName = prompt("Please enter your name");
     	countVowels(myName);
-      countVowels("John Micheal");
+        countVowels("John Micheal");
+	countVowels("Naveen Kumar");
 	</script>
 </head>
 <body>
