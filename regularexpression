@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Regular Expressions</h2>
+
+<script language="javascript">
+var str = "James Bond007";
+var regex = /[a-z][0-9]+/;
+alert(str.search(regex));  
+
+var regex1 = /[\d]/g;
+alert(str.replace (regex1, ""));
+
+var regExp = /\d+/g;
+var str1 = "Mary: 36, Tim: 38";
+alert(str1.match(regExp));  
+
+var regex2 = /[,:.]/;       // delimiters are comma, colon, and period
+var str2 = 'Tim:20,Henry:30.Linda:35';
+alert(str2.split(regex)); 
+
+var page = "annie@js.org, jim@email.com, some-invalid-email-address";
+var regex3 = 
+    /[0-9a-zA-Z]+@[0-9a-zA-Z]+[\.]{1}[0-9a-zA-Z]+[\.]?[0-9a-zA-Z]+/g;
+do {
+     var address = regex.exec(page);
+     alert(address[0]);       // => annie@js.org, then jim@email.com 
+} while (address.index < page.length); 
+</script>
+
+</body>
+</html>
