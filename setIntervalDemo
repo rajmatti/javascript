@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+
+<style>
+#divcls {
+  background: green;
+  height: 200px;
+  width:300px;
+  border-radius: 15px;
+  padding:20px;
+  font-size:22px;
+  color:#fff;   
+}
+
+</style>
+ 
+  
+</head>
+<body>
+<div id="divcls"></div>
+<script>
+
+window.setInterval(function(){ func_setInterval() }, 1000);
+
+function func_setInterval(){
+if (document.getElementById("divcls").style.backgroundColor == 'green'){
+    document.getElementById("divcls").style.backgroundColor = 'blue';
+}
+else{
+    document.getElementById("divcls").style.backgroundColor = 'green';
+}
+
+}
+
+    
+</script> 
+ 
+</body>
+</html>
+
