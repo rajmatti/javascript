@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript try-catch Statement</title>
+</head>
+<body>
+    <script>
+    try {
+        var greet = "Hi, there!";
+        document.write(greet);
+        
+        // Trying to access a non-existent variable
+        document.write(welcome);
+        
+        // If error occurred following line won't execute
+        alert("All statements are executed successfully.");
+    } catch(error) {
+        // Handle the error
+      alert("Caught error: " + error.message);
+    }
+     
+    // Continue execution
+    document.write("<p>Hello World!</p>");
+    </script>
+</body>
+</html>                      
